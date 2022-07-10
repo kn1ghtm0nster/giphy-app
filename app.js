@@ -1,12 +1,12 @@
-console.log(
-	'If you are reading this, Diego is asking politely to close the console tab. It is a tool for devs only. Ty :) <3'
+console.warn(
+	'If you are reading this, Diego is asking politely to close this tab which can be done by pressing the F12 key. It is a tool for devs only. Ty :) <3'
 );
 
 async function searchGif(search) {
 	try {
 		const api_key = 'LDgZh9ikEaLEYvmQI2aSwx9OtkLPZbAD';
 		const res = await axios.get('https://api.giphy.com/v1/gifs/search', {
-			params: { api_key, q: search, limit: 5 }
+			params: { api_key, q: search, limit: 15 }
 		});
 		const mainDiv = document.querySelector('#content-row');
 		const rand = randInt();
@@ -15,7 +15,7 @@ async function searchGif(search) {
 		const newDiv = document.createElement('div');
 		newDiv.classList.add('col-md-4', 'mx-auto');
 		const newImg = document.createElement('img');
-		newImg.classList.add('mt-3', 'rounded', 'shadow');
+		newImg.classList.add('m-2', 'rounded', 'shadow');
 		newImg.src = imgSrc;
 		newDiv.append(newImg);
 		mainDiv.append(newDiv);
@@ -25,7 +25,7 @@ async function searchGif(search) {
 }
 
 function randInt() {
-	let rand = Math.floor(Math.random() * 5);
+	let rand = Math.floor(Math.random() * 15);
 	return rand;
 }
 
