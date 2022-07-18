@@ -4,7 +4,9 @@
 
 - This project was made as a part of Springboard's Software Engineering Course. The main objective of the project was to use `Axios` to make an external `API` call to add new elements to the page via the `DOM Object`.
 
-    - __NOTE:__ This page uses a beta `API` key which will be changed in the coming days.
+    - __NOTE:__ This page uses a beta `API` key.
+
+- [Link](https://kn1ghtm0nster.github.io/giphy-app) for live application (hosted through GitHub Pages).
 
 ---
 
